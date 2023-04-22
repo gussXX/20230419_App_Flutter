@@ -64,6 +64,22 @@ mixin _$Variables on VariablesBase, Store {
     });
   }
 
+  late final _$switchvalueAtom =
+      Atom(name: 'VariablesBase.switchvalue', context: context);
+
+  @override
+  bool get switchvalue {
+    _$switchvalueAtom.reportRead();
+    return super.switchvalue;
+  }
+
+  @override
+  set switchvalue(bool value) {
+    _$switchvalueAtom.reportWrite(value, super.switchvalue, () {
+      super.switchvalue = value;
+    });
+  }
+
   late final _$VariablesBaseActionController =
       ActionController(name: 'VariablesBase', context: context);
 
@@ -79,9 +95,21 @@ mixin _$Variables on VariablesBase, Store {
   }
 
   @override
+  void chanceswitchvalue() {
+    final _$actionInfo = _$VariablesBaseActionController.startAction(
+        name: 'VariablesBase.chanceswitchvalue');
+    try {
+      return super.chanceswitchvalue();
+    } finally {
+      _$VariablesBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   String toString() {
     return '''
-indexList: ${indexList}
+indexList: ${indexList},
+switchvalue: ${switchvalue}
     ''';
   }
 }

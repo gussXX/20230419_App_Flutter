@@ -1,11 +1,11 @@
 import 'package:mobx/mobx.dart';
-
 part 'store.g.dart';
+
+// Build Run --> flutter packages pub run build_runner watch
 
 class Counter = CounterBase with _$Counter;
 
 abstract class CounterBase with Store {
-
   @observable
   int counter = 0;
 
@@ -19,11 +19,16 @@ class Variables = VariablesBase with _$Variables;
 
 abstract class VariablesBase with Store {
   @observable
-  late int indexList;
+  int indexList = 0;
+
+  @observable
+  bool switchvalue = false;
 
   @action
-  void change() {
-  print('função chamada, o valor foi alterado');
-}
-}
+  void change() {}
 
+  @action
+  void chanceswitchvalue() {
+    switchvalue = !switchvalue;
+  }
+}
