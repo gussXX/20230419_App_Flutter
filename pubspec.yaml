@@ -1,5 +1,5 @@
-name: emy
-description: A new Flutter project.
+name: everthing
+description: um presente para ela.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -29,8 +29,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
@@ -38,8 +36,10 @@ dependencies:
   mobx_codegen: ^2.2.0
   flutter_mobx: ^2.0.6+5
   intl: ^0.17.0
-
-
+  video_player: ^2.1.5
+  chewie: ^1.0.0
+  appinio_video_player: ^1.2.0
+  flutter_launcher_icons: ^0.11.0
 
 dev_dependencies:
   flutter_test:
@@ -65,6 +65,11 @@ flutter:
         - asset: assets/fonts/Montserrat-Bold.ttf
   assets:
     - assets/imgs/
+    - assets/imgs/files/
+    - assets/imgs/gifts/
+    - assets/imgs/she/
+    - assets/movies/
+    - assets/icons/
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors
-import 'package:emy/pages/secound.dart';
+import 'package:everthing/pages/gifts.dart';
+import 'package:everthing/pages/secound.dart';
+import 'package:everthing/pages/third.dart';
 import 'package:flutter/material.dart';
 import 'Index.dart';
 
@@ -24,8 +26,10 @@ class MyApp extends StatelessWidget {
       //home: Index(),
       initialRoute: '/',
       routes: {
-        '/': (context) => Index(),
-        '/secound': (context) => Secound(),
+        '/': (context)          => Index(),
+        '/secound': (context)   => Secound(),
+        '/third': (context)     => Third(),
+        '/gifts': (context)     => Gifts(),
       },
     );
   }

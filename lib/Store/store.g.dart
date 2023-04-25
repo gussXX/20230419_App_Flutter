@@ -80,6 +80,22 @@ mixin _$Variables on VariablesBase, Store {
     });
   }
 
+  late final _$isOpenAtom =
+      Atom(name: 'VariablesBase.isOpen', context: context);
+
+  @override
+  bool get isOpen {
+    _$isOpenAtom.reportRead();
+    return super.isOpen;
+  }
+
+  @override
+  set isOpen(bool value) {
+    _$isOpenAtom.reportWrite(value, super.isOpen, () {
+      super.isOpen = value;
+    });
+  }
+
   late final _$VariablesBaseActionController =
       ActionController(name: 'VariablesBase', context: context);
 
@@ -106,10 +122,22 @@ mixin _$Variables on VariablesBase, Store {
   }
 
   @override
+  void chancepanel() {
+    final _$actionInfo = _$VariablesBaseActionController.startAction(
+        name: 'VariablesBase.chancepanel');
+    try {
+      return super.chancepanel();
+    } finally {
+      _$VariablesBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   String toString() {
     return '''
 indexList: ${indexList},
-switchvalue: ${switchvalue}
+switchvalue: ${switchvalue},
+isOpen: ${isOpen}
     ''';
   }
 }

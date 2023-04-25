@@ -24,11 +24,19 @@ abstract class VariablesBase with Store {
   @observable
   bool switchvalue = false;
 
+  @observable
+  bool isOpen = false;
+
   @action
   void change() {}
 
   @action
   void chanceswitchvalue() {
     switchvalue = !switchvalue;
+  }
+
+  @action
+  void chancepanel(){
+    isOpen = !isOpen;
   }
 }
