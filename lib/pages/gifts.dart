@@ -84,12 +84,16 @@ class _GiftsState extends State<Gifts> {
                       height: 200, width: 200,
                       ),
                       const Center(
-                        child: Text('data', 
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontFamily: 'Montserrat',
-                          color: Colors.white
-                          ),),
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 30, right: 30),
+                          child: Text('Acho que eu já disse isso um milhão de vezes, eu amo você de argola, mas desta vez tentei variar um pouco...', 
+                          style: TextStyle(
+                            overflow: TextOverflow.clip,
+                            fontSize: 14,
+                            fontFamily: 'Montserrat',
+                            color: Colors.white
+                            ),),
+                        ),
                       )
                     ],
                   ),
@@ -112,12 +116,15 @@ class _GiftsState extends State<Gifts> {
                       height: 200, width: 200,
                       ),
                       const Center(
-                        child: Text('data', 
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontFamily: 'Montserrat',
-                          color: Colors.white
-                          ),),
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 30, right: 30),
+                          child: Text('Eu guardei essa informação por tanto tempo que não sei como na esqueci kkkk tambem sondei você varias vezes.', 
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontFamily: 'Montserrat',
+                            color: Colors.white
+                            ),),
+                        ),
                       )
                     ],
                   ),
@@ -140,17 +147,20 @@ class _GiftsState extends State<Gifts> {
                       height: 200, width: 200,
                       ),
                       const Center(
-                        child: Text('data', 
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontFamily: 'Montserrat',
-                          color: Colors.white
-                          ),),
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 30, right: 30),
+                          child: Text('Este aqui é simplesmente pelo fato deu amar você de vermelho.', 
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontFamily: 'Montserrat',
+                            color: Colors.white
+                            ),),
+                        ),
                       )
                     ],
                   ),
                 ),
-              )                            
+              )
             ],
           ),
         ),

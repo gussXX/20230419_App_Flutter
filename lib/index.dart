@@ -237,14 +237,14 @@ class _IndexState extends State<Index> {
               ),
             ),
             actions: <Widget>[
-              IconButton(
-                  onPressed: () {
-                    //Navigator.of(context).pushNamed('/secound');
-                  },
-                  icon: const Icon(
-                    Icons.add,
-                    color: Colors.black,
-                  ))
+              // IconButton(
+              //     onPressed: () {
+              //       //Navigator.of(context).pushNamed('/secound');
+              //     },
+              //     icon: const Icon(
+              //       Icons.add,
+              //       color: Colors.black,
+              //     ))
             ]),
         body: SingleChildScrollView(
           controller: controller,
@@ -302,7 +302,7 @@ class _IndexState extends State<Index> {
                         ),
                         const SizedBox(height: 10),
                         const Text(
-                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+                          "De uma ideia meio boba a um projeto que se deixasse eu passaria horas mexendo nele. Em algumas linhas de código (cerca de 1859) tentei construir algo que pudesse expressar uma fração do quanto eu te amo e quem sabe pode eternizar cada momento nosso nessas linhas de código...",
                           style: TextStyle(
                               fontFamily: 'Montserrat',
                               fontWeight: FontWeight.normal,
@@ -324,7 +324,9 @@ class _IndexState extends State<Index> {
                                               const Color(0xff000000)),
                                       minimumSize: MaterialStateProperty.all(
                                           const Size(120, 40))),
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.of(context).pushNamed('/vermais');
+                                  },
                                   child: const Text('Ver mais'),
                                 ),
                               ),
@@ -695,7 +697,7 @@ class _IndexState extends State<Index> {
                         ),
                         const SizedBox(height: 10),
                         const Text(
-                          "O tempo é ralativo e eu espero passar cada minuto dessa incerteza que é o mundo, com minha maior certeza; você. Eu te amo e sempre vou te amar.",
+                          "O tempo é ralativo e espero passar cada minuto dessa incerteza que é o mundo, com minha maior certeza; você. Eu te amo e sempre vou te amar.",
                           style: TextStyle(
                               fontFamily: 'Montserrat',
                               fontWeight: FontWeight.normal,
@@ -736,7 +738,7 @@ class _IndexState extends State<Index> {
                             style: TextStyle(
                                 fontFamily: 'Montserrat',
                                 fontWeight: FontWeight.bold)),
-                        Text('feito com muito código e amor',
+                        Text('feito com muito código e amor.',
                             style: TextStyle(
                                 fontFamily: 'Montserrat',
                                 fontWeight: FontWeight.normal)),
